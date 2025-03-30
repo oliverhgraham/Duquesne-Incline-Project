@@ -1,0 +1,97 @@
+<!-- AI + w3 schools was consulted in the creation of this site -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duquesne Incline</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/slideshow.js"></script>
+</head>
+<body>
+    <header>
+        <img src="static/banner.png" alt="Duquesne Incline Banner" class="banner">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tickets.html">Shop</a></li>
+                <li><a href="info.html">More Information</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the Duquesne Incline</h1>
+        <p>Experience breathtaking views of Pittsburgh from one of the city's most historic landmarks.</p>
+        <!-- taken from w3 schools and edited -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="static/incline-view.jpg" style="width:75%" alt = "View From the Top of the Incline">
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="static/old-incline.png" style="width:75%" alt = "Incline in the 1920s">
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="static/gear wheel.jpg" style="width:75%" alt = "One of the Gears that runs the Incline">
+              </div>
+         <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+<!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      <!-- emd of w3 code -->  
+        <section class="info">
+            <h2>Why Visit?</h2>
+            <p>The Duquesne Incline has been carrying passengers since 1877, offering a unique experience with incredible cityscape views.</p>
+        </section>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6508.283665446014!2d-80.01873483842499!3d40.43826474912527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af24753323%3A0x391d7b79fc54985b!2sDuquesne%20Incline!5e1!3m2!1sen!2sus!4v1743350383886!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <div class = "contact">
+            <h3>CONTACT US</h3>
+            <p>phone: 412-381-1665</p>
+            <P>email: <a href="duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a></P>
+            <p>address: 1220 Grandview Ave Pittsburgh, PA, 15211</p>
+        </div>
+        <form >
+            <label for="name">Name (required):</label><br>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50"><br><br>
+            
+            <label for="email">Email Address (required):</label><br>
+            <input type="email" id="email" name="email" required maxlength="100"><br><br>
+            
+            <label for="sms">Receive messages via SMS text:</label>
+            <input type="checkbox" id="sms" name="sms"><br><br>
+            
+            <label for="mobile">Mobile Phone (optional):</label><br>
+            <input type="tel" id="mobile" name="mobile" pattern="\d*" minlength="10" maxlength="15"><br><br>
+            
+            <label for="zip">Zip Code (optional):</label><br>
+            <input type="text" id="zip" name="zip" pattern="\d{5}" maxlength="5"><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    
+    </main>
+    <footer>
+        <p>&copy; <span id="copyYear"></span> Duquesne Incline. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("copyYear").innerText = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
