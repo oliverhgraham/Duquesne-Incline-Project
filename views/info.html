@@ -1,0 +1,85 @@
+<!-- AI + w3 schools was consulted in the creation of this site -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duquesne Incline</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/moreLess.js"></script>
+</head>
+<body>
+    <header>
+        <img src="../static/banner.png" alt="Duquesne Incline Banner" class="banner">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tickets.html">Shop</a></li>
+                <li><a href="info.html">More Information</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <h1>The History of the Duquesne Incline</h1>
+        <br>
+        <div class = "container">
+            <div class = "info-img">
+            <h2>1926 Photo of the Duquesne Incline</h2>
+            <img src="../static/old-incline.png" alt="1926 Photo of what the Incline" class="main-image">
+            </div>
+            <div class = "info-text">
+            <p id = "short">The Duquesne Incline, designed by Samuel Diescher, opened on May 20, 1877, to provide transportation for residents of Mount Washington (then Coal Hill) and connect them with the industrial areas below. Once a key commuter route, it is now a historic attraction offering stunning views of Pittsburgh's skyline...</p>
+                <p id = "long"> The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.
+                Although plans for a freight and passenger incline are known to have existed much earlier, financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed. Eventually, of course, difficulties were overcome and the Incline was built. It was opened to the public May 20, 1877. The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher, for Kirk Bigham and Associates. Mr. Diescher, an engineer, had become the country's foremost builder of inclines. He was also to design and build most of those that followed.
+                At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, which later came to be known as Mount Washington. The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. From 1964 until the present, the Incline has been operated by the Society for the Preservation of The Duquesne Heights Incline; it has been owned by the Port Authority of Allegheny County.</p>
+                <button id="readMore">Read More</button>
+                <button id="readLess">Read Less</button>
+            </div>
+        </div>
+        <section class="binfo">
+            <div class ="fastFacts"><h2>Fast Facts!</h2>
+            <p> 
+                - Opened to Public: May 20, 1877<br>
+                - Cost to Build: $47,000<br>
+                - Length of Track: 794 feet<br>
+                - Elevation: 400 feet<br>
+                - Grade: 30.5 degrees<br>
+                - Speed: 6 miles per hour<br>
+                - Passenger: Capacity 18 per car<br>
+            </p></div>
+            <div class = "yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/bSLvrz5GraI?si=A7tAcQqF57xnLrs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </section>
+        <div class = "fieldTrip">
+            <p><h3>A free field trip program is available for students and youth groups of ten or more daily</h3>  -except Saturdays and Sundays after 12:00 noon due to weekend crowds and limited space. 
+                <br><h3>The program includes:<br></h3>
+                A teacher's lesson packet for students' specific grade level<br>
+                A round trip ride on the Duquesne Incline<br>
+                A history of inclines in Pittsburgh<br>
+                A discussion about Pittsburgh's industrial past<br>
+                A visit to the machine room to observe the original hoisting equipment in operation and learn about the engineers who built it<br> 
+                A panoramic view of Downtown Pittsburgh and The North Shore from our observation deck 400 feet above the three rivers<br>
+                A brief history of the French and Indian War from which the city arose</p>
+        </div>
+        <br>
+        <br>
+        <div class = "contact">
+            <h3>CONTACT US</h3>
+            <p>phone: 412-381-1665</p>
+            <a href="https://www.facebook.com/TheDuquesneIncline"> FaceBook:<img src = "static/facebook.png" alt = "facebook"></img></a>
+            <P>email: <a href="duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a></P>
+            <p>address: 1197 West Carson St. Pittsburgh, PA, 15219</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyYear"></span> Duquesne Incline. All Rights Reserved.</p>
+        <a href = "https://docs.google.com/document/d/1QhVDMAeDt9r3vmdDgM6VdMV7_cxofdAMFE3zabWXgX0/edit?usp=sharing">Citation</a>
+    </footer>
+    <script>
+        document.getElementById("copyYear").innerText = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

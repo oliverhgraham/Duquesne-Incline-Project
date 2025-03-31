@@ -224,3 +224,7 @@ table tr:nth-child(3){
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.newsLetter{
+    border: 5px, solid, red;
+}

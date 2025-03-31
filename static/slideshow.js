@@ -29,13 +29,7 @@ function showSlides(n) {
 
 let slideIndex = 1;
 //showSlides(slideIndex);
-window.onload = function() {
-    // Your code here
-    showSlides(1);
-    let slideIndex = 1;
-    console.log("Page has fully loaded!");
-    // Additional functionality can be added here
-};
+
 document.addEventListener("DOMContentLoaded", function() {
     let slideIndex = 1;
     showSlides(slideIndex);

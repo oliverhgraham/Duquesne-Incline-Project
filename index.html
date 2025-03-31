@@ -14,9 +14,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="tickets.html">Shop</a></li>
-                <li><a href="info.html">More Information</a></li>
-                <li><a href="activities.html">Activities</a></li>
+                <li><a href="views/tickets.html">Shop</a></li>
+                <li><a href="views/info.html">More Information</a></li>
+                <li><a href="views/activities.html">Activities</a></li>
             </ul>
         </nav>
     </header>
@@ -63,9 +63,13 @@
         <div class = "contact">
             <h3>CONTACT US</h3>
             <p>phone: 412-381-1665</p>
+            <a href="https://www.facebook.com/TheDuquesneIncline"> FaceBook:<img src = "static/facebook.png" alt = "facebook"></img></a>
             <P>email: <a href="duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a></P>
-            <p>address: 1220 Grandview Ave Pittsburgh, PA, 15211</p>
+            <p>address: 1197 West Carson St. Pittsburgh, PA, 15219</p>
         </div>
+        <br>
+        <div class = "newsLetter">
+        <h2>Sign Up for Our NewsLetter!</h2>
         <form >
             <label for="name">Name (required):</label><br>
             <input type="text" id="name" name="name" required minlength="2" maxlength="50"><br><br>
@@ -84,10 +88,11 @@
             
             <button type="submit">Submit</button>
         </form>
-    
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="copyYear"></span> Duquesne Incline. All Rights Reserved.</p>
+        <a href = "https://docs.google.com/document/d/1QhVDMAeDt9r3vmdDgM6VdMV7_cxofdAMFE3zabWXgX0/edit?usp=sharing">Citation</a>
     </footer>
     <script>
         document.getElementById("copyYear").innerText = new Date().getFullYear();
